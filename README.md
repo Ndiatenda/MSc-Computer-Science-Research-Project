@@ -4,7 +4,7 @@
 
 -------------------------------------------------------------------------------------------
 ### Topic: Large Crowd Analytics - Abnormal Activity Detection
-
+__________________
 ### 1. Overview 
 
 This work proposes the use of deep learning to identify abnormal activity in surveillance videos.
