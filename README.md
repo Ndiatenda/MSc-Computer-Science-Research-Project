@@ -8,4 +8,4 @@ __________________
 ### 1. Overview 
 
 This work proposes the use of deep learning to identify abnormal activity in surveillance videos.
-The increased prevalence of surveillance systems implies the increase in video data that is currently subjected to manual human analysis, which can be inefficient. 
+The increased prevalence of surveillance systems implies the increase in video data which is currently reliant on manual human analysis for the efficient function surveillance systems.
