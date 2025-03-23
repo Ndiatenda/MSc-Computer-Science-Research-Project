@@ -7,5 +7,5 @@
 __________________
 ### 1. Overview 
 
-This work proposes the use of deep learning to identify abnormal activity in surveillance videos.
+This work proposes the use of variational autoencoders (VAEs) to identify abnormal activity in surveillance videos.
 The increased prevalence of surveillance systems implies the increase in video data which is currently reliant on manual human analysis for the efficient functioning of surveillance systems.
