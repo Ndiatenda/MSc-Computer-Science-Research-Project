@@ -38,7 +38,7 @@ tf.config.optimizer.set_experimental_options({
 #++++++++++++++++++++++++++++++++++++++++++++++
 #Define Ground Truths
 #++++++++++++++++++++++++++++++++++++++++++++++
-# Specify the directory where you want to save the .mat file
+# Specify the directory to save the .mat file
 destination_dir = '/datasets/nndou/UCSD_Anomaly_Dataset/UCSDped1/Test'  # Replace with your desired directory
 
 # Confirm the directory exists
@@ -136,7 +136,7 @@ if __name__ == "__main__":
             
             
             # =============================================
-            # Add these new classes in Part 1 after HistoryTracker
+            # Added these new classes in Part 1 after HistoryTracker
             # =============================================
             class CosineDecayWithRestarts(tf.keras.optimizers.schedules.LearningRateSchedule):
                 def __init__(self, initial_lr, initial_epochs, decay_steps, t_mul=2.0, m_mul=0.5):
@@ -174,7 +174,7 @@ if __name__ == "__main__":
             
             
             # =============================================
-            # Configuration (Update with paths to run)
+            # Configuration (Update paths to run)
             # =============================================
             CONFIG = {
                 'data_root': '/datasets/nndou/UCSD_Anomaly_Dataset/UCSDped1',
@@ -1400,10 +1400,11 @@ if __name__ == "__main__":
                 print("Training and evaluation complete.")
  
     finally:
-        # Proper strategy cleanup
+        # Strategy cleanup
         if strategy:
             print("Cleaning up strategy...")
             # Explicitly close the strategy
             strategy._extended._container_strategy = None  # pylint: disable=protected-access
             tf.distribute.experimental_set_strategy(None)
+
             del strategy                    
